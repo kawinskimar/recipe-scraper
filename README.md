@@ -10,7 +10,6 @@ This is my first web scraping project. The goal is to scrape random recipes with
 
 ## Ideas for Future
 
-I would like to eventually add the following features:
 * Add picture of each recipe into email
 * Create shopping lists based on ingredients in recipes
 * Run on local server scheduled with cron
