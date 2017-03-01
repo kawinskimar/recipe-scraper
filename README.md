@@ -5,7 +5,7 @@ This is my first web scraping project. The goal is to scrape random recipes with
 ## Initial Features
 
 * Crawler will navigate to specific category pages and randomly pick a certain number of recipes from each category and format in JSON
-..* Initially will just grab title, ingredients, and directions (as well as yield and calories per serving)
+* Initially will just grab title, ingredients, and directions (as well as yield and calories per serving)
 * JSON will be parsed into an email for weekly sending
 
 ## Ideas for Future
