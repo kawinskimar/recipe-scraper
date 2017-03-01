@@ -1,4 +1,5 @@
 import scrapy
+import sets
 
 class AllrecipesSpider(scrapy.Spider):
     name = 'allrecipes'
@@ -10,22 +11,21 @@ class AllrecipesSpider(scrapy.Spider):
             'http://allrecipes.com/recipes/659/meat-and-poultry/chicken/chicken-breasts/'#, # chicken breasts
             #'http://allrecipes.com/recipes/148/breakfast-and-brunch/eggs/' # breakfasts with eggs
     ]
-    
+
     def parse(self, response):
-        #links = response.css('article.grid-col--fixed-tiles a::attr(href)').re(r'^\/recipe\/.*$')
-        #links = uniquify(links)
+        def uniquify(list):
+            # not order preserving, but quick - taken from https://www.peterbe.com/plog/uniqifiers-benchmark
+            set = {}
+            map(set.__setitem__, list, [])
+            return set.keys()
+
+        links = response.css('article.grid-col--fixed-tiles a::attr(href)').re(r'^\/recipe\/.*$') # finds only links that start with '/recipe/'
+        links = uniquify(links) # returns only unique values in list
 
         yield {
-            'relative_links': response.css('article.grid-col--fixed-tiles a::attr(href)').re(r'^\/recipe\/.*$')
-            # TODO: find only links that start with '/recipe/'
-            # TODO: remove duplicates from list of links
+            'relative_links': links,
+            'size': len(links)
         }
-
-    # not working the way I want it to
-    def uniquify(list):
-        # not order preserving, but quick - taken from https://www.peterbe.com/plog/uniqifiers-benchmark
-        set = Set(list)
-        return list(set)
 
 
 
