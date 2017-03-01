@@ -1,5 +1,5 @@
 import scrapy
-import sets
+import random
 
 class AllrecipesSpider(scrapy.Spider):
     name = 'allrecipes'
@@ -22,10 +22,14 @@ class AllrecipesSpider(scrapy.Spider):
         links = response.css('article.grid-col--fixed-tiles a::attr(href)').re(r'^\/recipe\/.*$') # finds only links that start with '/recipe/'
         links = uniquify(links) # returns only unique values in list
 
+        rand_link = random.choice(links)
+
         yield {
-            'relative_links': links,
+            'relative_link': rand_link,
             'size': len(links)
         }
+
+        ## TODO: follow random link (choose link at random from links list)
 
 
 
