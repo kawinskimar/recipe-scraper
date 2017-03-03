@@ -1,5 +1,6 @@
 import scrapy
 import random
+import urlparse
 
 class AllrecipesSpider(scrapy.Spider):
     name = 'allrecipes'
@@ -22,14 +23,18 @@ class AllrecipesSpider(scrapy.Spider):
         links = response.css('article.grid-col--fixed-tiles a::attr(href)').re(r'^\/recipe\/.*$') # finds only links that start with '/recipe/'
         links = uniquify(links) # returns only unique values in list
 
-        rand_link = random.choice(links)
+        for i in range (0, len(links)):
+            links[i] = urlparse.urljoin(response.url, links[i])
+
+        rand_recipes = random.sample(links, 5)
+
+        ## TODO: follow each random link and parse info from them for emailing
+        ## TODO: create separate file-parsing + email script
+        ## TODO: separate script for pulling ingredients out to make a shopping list of sorts
 
         yield {
-            'relative_link': rand_link,
-            'size': len(links)
+            'relative_link': rand_recipes
         }
-
-        ## TODO: follow random link (choose link at random from links list)
 
 
 
