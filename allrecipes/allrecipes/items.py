@@ -5,10 +5,23 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy.item import Item, Field
 
 
-class AllrecipesItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class AllrecipesItem(Item):
+    # defining all fields for item
+
+    # primary fields
+    title = Field()
+    ingredients = Field()
+    directions = Field()
+    recipe_yield_value = Field() # not working
+    recipe_yield_units = Field()
+    cals_per_serving = Field() # not working
+
+    # housekeeping fields
+    url = Field()
+    project = Field()
+    spider = Field()
+    server = Field()
+    date = Field()
