@@ -7,7 +7,6 @@
 
 from scrapy.item import Item, Field
 
-
 class AllrecipesItem(Item):
     # defining all fields for item
 
@@ -15,10 +14,10 @@ class AllrecipesItem(Item):
     title = Field()
     ingredients = Field()
     directions = Field()
-    recipe_yield_value = Field() # not working
-    recipe_yield_units = Field()
+    recipe_yield = Field() # not working
     cals_per_serving = Field() # not working
     cook_time = Field()
+    image = Field()
 
     # housekeeping fields
     url = Field()
