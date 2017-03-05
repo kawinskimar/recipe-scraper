@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item>
+		<cook_time>
+			<value>45 m</value>
+		</cook_time>
+		<cals_per_serving>
+			<value>287</value>
+		</cals_per_serving>
+		<title>
+			<value>Salsa Chicken</value>
+		</title>
+		<url>
+			<value>http://allrecipes.com/recipe/16700/salsa-chicken/</value>
+		</url>
+		<ingredients>
+			<value>4 skinless, boneless chicken breast halves</value>
+			<value>4 teaspoons taco seasoning mix</value>
+			<value>1 cup salsa</value>
+			<value>1 cup shredded Cheddar cheese</value>
+			<value>2 tablespoons sour cream (optional)</value>
+		</ingredients>
+		<spider>
+			<value>allrecipes</value>
+		</spider>
+		<recipe_yield_units>
+			<value>servings</value>
+		</recipe_yield_units>
+		<server>
+			<value>mjkDesktop</value>
+		</server>
+		<project>
+			<value>allrecipes</value>
+		</project>
+		<directions>
+			<value>Preheat oven to 375 degrees F (190 degrees C)</value>
+			<value>Place chicken breasts in a lightly greased 9x13 inch baking dish. Sprinkle taco seasoning on both sides of chicken breasts, and pour salsa over all.</value>
+			<value>Bake at 375 degrees F (190 degrees C) for 25 to 35 minutes, or until chicken is tender and juicy and its juices run clear.</value>
+			<value>Sprinkle chicken evenly with cheese, and continue baking for an additional 3 to 5 minutes, or until cheese is melted and bubbly. Top with sour cream if desired, and serve.</value>
+		</directions>
+		<date>
+			<value>2017-03-04 20:05:13.161000</value>
+		</date>
+	</item>
+	<item>
+		<cook_time>
+			<value>55 m</value>
+		</cook_time>
+		<cals_per_serving>
+			<value>448</value>
+		</cals_per_serving>
+		<title>
+			<value>Famous Butter Chicken</value>
+		</title>
+		<url>
+			<value>http://allrecipes.com/recipe/24002/famous-butter-chicken/</value>
+		</url>
+		<ingredients>
+			<value>2 eggs, beaten</value>
+			<value>1 cup crushed buttery round cracker crumbs</value>
+			<value>1/2 teaspoon garlic salt</value>
+			<value>ground black pepper to taste</value>
+			<value>4 skinless, boneless chicken breast halves</value>
+			<value>1/2 cup butter, cut into pieces</value>
+		</ingredients>
+		<spider>
+			<value>allrecipes</value>
+		</spider>
+		<recipe_yield_units>
+			<value>servings</value>
+		</recipe_yield_units>
+		<server>
+			<value>mjkDesktop</value>
+		</server>
+		<project>
+			<value>allrecipes</value>
+		</project>
+		<directions>
+			<value>Preheat oven to 375  degrees F (190 degrees C).</value>
+			<value>Place eggs and cracker crumbs in two separate shallow bowls. Mix cracker crumbs with garlic salt and pepper. Dip chicken in the eggs, then dredge in the crumb mixture to coat.</value>
+			<value>Arrange coated chicken in a 9x13 inch baking dish. Place pieces of butter around the chicken.</value>
+			<value>Bake in the preheated oven for 40 minutes, or until chicken is no longer pink and juices run clear.</value>
+		</directions>
+		<date>
+			<value>2017-03-04 20:05:16.985000</value>
+		</date>
+	</item>
+	<item>
+		<cook_time>
+			<value>50 m</value>
+		</cook_time>
+		<cals_per_serving>
+			<value>421</value>
+		</cals_per_serving>
+		<title>
+			<value>Lemon Chicken Piccata</value>
+		</title>
+		<url>
+			<value>http://allrecipes.com/recipe/214488/lemon-chicken-piccata/</value>
+		</url>
+		<ingredients>
+			<value>3 large skinless, boneless chicken breast halves - cut into 1/2-inch medallions</value>
+			<value>salt and pepper to taste</value>
+			<value>1/2 cup all-purpose flour</value>
+			<value>2 tablespoons vegetable oil, or as needed</value>
+			<value>1 clove garlic, minced</value>
+			<value>1 cup low sodium chicken broth</value>
+			<value>1/2 lemon, thinly sliced</value>
+			<value>1/4 cup fresh lemon juice</value>
+			<value>2 tablespoons capers, drained and rinsed</value>
+			<value>3 tablespoons butter</value>
+			<value>2 tablespoons minced Italian (flat-leaf) parsley</value>
+		</ingredients>
+		<spider>
+			<value>allrecipes</value>
+		</spider>
+		<recipe_yield_units>
+			<value>servings</value>
+		</recipe_yield_units>
+		<server>
+			<value>mjkDesktop</value>
+		</server>
+		<project>
+			<value>allrecipes</value>
+		</project>
+		<directions>
+			<value>Preheat oven to 200 degrees F (95 degrees C). Place a serving platter into the oven to warm.</value>
+			<value>Season the chicken breast pieces with salt and pepper and dredge them in flour. Shake off excess flour. Heat the vegetable oil in a skillet; pan-fry the chicken pieces until golden brown on both sides, about 3 minutes per side. Work in batches and do not crowd skillet, adding oil as needed . Place the chicken pieces onto the warmed platter in the oven. When finished with all the chicken, drain most of the oil from the skillet, leaving a thin coating on the surface of the pan.</value>
+			<value>Cook and stir the minced garlic in the skillet until fragrant, about 20 seconds. Pour in the chicken broth. Scrape and dissolve any brown bits from the bottom of the skillet. Stir in the lemon slices and bring the mixture to a boil. Let cook, stirring occasionally, until the sauce reduces to about 2/3 cup, 5 to 8 minutes. Add the lemon juice and capers; simmer until the sauce is reduced and slightly thickened, about 5 minutes more. Drop the butter into the skillet and swirl it into the sauce by tilting the skillet until the butter is melted and incorporated. Add the parsley; remove from heat and set aside.</value>
+			<value>Arrange the chicken medallions on serving plates and spoon sauce over each portion to serve.</value>
+		</directions>
+		<date>
+			<value>2017-03-04 20:05:20.886000</value>
+		</date>
+	</item>
+	<item>
+		<cook_time>
+			<value>7 h 15 m</value>
+		</cook_time>
+		<cals_per_serving>
+			<value>434</value>
+		</cals_per_serving>
+		<title>
+			<value>Slow Cooker Chicken Taco Soup</value>
+		</title>
+		<url>
+			<value>http://allrecipes.com/recipe/70343/slow-cooker-chicken-taco-soup/</value>
+		</url>
+		<ingredients>
+			<value>1 onion, chopped</value>
+			<value>1 (16 ounce) can chili beans</value>
+			<value>1 (15 ounce) can black beans</value>
+			<value>1 (15 ounce) can whole kernel corn, drained</value>
+			<value>1 (8 ounce) can tomato sauce</value>
+			<value>1 (12 fluid ounce) can or bottle beer</value>
+			<value>2 (10 ounce) cans diced tomatoes with green chilies, undrained</value>
+			<value>1 (1.25 ounce) package taco seasoning</value>
+			<value>3 whole skinless, boneless chicken breasts</value>
+			<value>1 (8 ounce) package shredded Cheddar cheese (optional)</value>
+			<value>sour cream (optional)</value>
+			<value>crushed tortilla chips (optional)</value>
+		</ingredients>
+		<spider>
+			<value>allrecipes</value>
+		</spider>
+		<recipe_yield_units>
+			<value>servings</value>
+		</recipe_yield_units>
+		<server>
+			<value>mjkDesktop</value>
+		</server>
+		<project>
+			<value>allrecipes</value>
+		</project>
+		<directions>
+			<value>Place the onion, chili beans, black beans, corn, tomato sauce, beer, and diced tomatoes in a slow cooker. Add taco seasoning, and stir to blend. Lay chicken breasts on top of the mixture, pressing down slightly until just covered by the other ingredients. Set slow cooker for low heat, cover, and cook for 5 hours.</value>
+			<value>Remove chicken breasts from the soup, and allow to cool long enough to be handled. Stir the shredded chicken back into the soup, and continue cooking for 2 hours. Serve topped with shredded Cheddar cheese, a dollop of sour cream, and crushed tortilla chips, if desired.</value>
+		</directions>
+		<date>
+			<value>2017-03-04 20:05:23.662000</value>
+		</date>
+	</item>
+	<item>
+		<cook_time>
+			<value>1 h 10 m</value>
+		</cook_time>
+		<cals_per_serving>
+			<value>415</value>
+		</cals_per_serving>
+		<title>
+			<value>Chicken Pot Pie IX</value>
+		</title>
+		<url>
+			<value>http://allrecipes.com/recipe/26317/chicken-pot-pie-ix/</value>
+		</url>
+		<ingredients>
+			<value>1 pound skinless, boneless chicken breast halves - cubed</value>
+			<value>1 cup sliced carrots</value>
+			<value>1 cup frozen green peas</value>
+			<value>1/2 cup sliced celery</value>
+			<value>1/3 cup butter</value>
+			<value>1/3 cup chopped onion</value>
+			<value>1/3 cup all-purpose flour</value>
+			<value>1/2 teaspoon salt</value>
+			<value>1/4 teaspoon black pepper</value>
+			<value>1/4 teaspoon celery seed</value>
+			<value>1 3/4 cups chicken broth</value>
+			<value>2/3 cup milk</value>
+			<value>2 (9 inch) unbaked pie crusts</value>
+		</ingredients>
+		<spider>
+			<value>allrecipes</value>
+		</spider>
+		<recipe_yield_units>
+			<value>servings</value>
+		</recipe_yield_units>
+		<server>
+			<value>mjkDesktop</value>
+		</server>
+		<project>
+			<value>allrecipes</value>
+		</project>
+		<directions>
+			<value>Preheat oven to 425 degrees F (220 degrees C.)</value>
+			<value>In a saucepan, combine chicken, carrots, peas, and celery. Add water to cover and boil for 15 minutes. Remove from heat, drain and set aside.</value>
+			<value>In the saucepan over medium heat, cook onions in butter until soft and translucent. Stir in flour, salt, pepper, and celery seed. Slowly stir in chicken broth and milk. Simmer over medium-low heat until thick. Remove from heat and set aside.</value>
+			<value>Place the chicken mixture in bottom pie crust. Pour hot liquid mixture over. Cover with top crust, seal edges, and cut away excess dough. Make several small slits in the top to allow steam to escape.</value>
+			<value>Bake in the preheated oven for 30 to 35 minutes, or until pastry is golden brown and filling is bubbly. Cool for 10 minutes before serving.</value>
+		</directions>
+		<date>
+			<value>2017-03-04 20:05:26.314000</value>
+		</date>
+	</item>
+</items>
