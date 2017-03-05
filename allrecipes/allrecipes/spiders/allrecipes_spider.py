@@ -13,9 +13,9 @@ class AllrecipesSpider(scrapy.Spider):
     download_delay = 3
 
     start_urls = [
-            # American recipe categories
-            'http://allrecipes.com/recipes/659/meat-and-poultry/chicken/chicken-breasts/'#, # chicken breasts
-            #'http://allrecipes.com/recipes/78/breakfast-and-brunch/' # breakfasts with eggs
+            'http://allrecipes.com/recipes/659/meat-and-poultry/chicken/chicken-breasts/', # chicken breasts
+            'http://allrecipes.com/recipes/693/meat-and-poultry/turkey/ground/', # ground turkey
+            'http://allrecipes.com/recipes/148/breakfast-and-brunch/eggs' # breakfasts with eggs
     ]
 
     def parse(self, response):
@@ -40,7 +40,7 @@ class AllrecipesSpider(scrapy.Spider):
         else:
             num_recipes = len(links)
 
-        rand_recipes = random.sample(links, 5)
+        rand_recipes = random.sample(links, 2)
 
         # yield {
         #     'relative_links': rand_recipes,
@@ -61,10 +61,10 @@ class AllrecipesSpider(scrapy.Spider):
         l.add_xpath('title', '//h1[@itemprop="name"][1]/text()')
         l.add_xpath('ingredients', '//span[@itemprop="ingredients"]/text()')
         l.add_xpath('directions', '//span[@class="recipe-directions__list--item"]/text()')
-        l.add_xpath('recipe_yield_value', '//span[@class="servings-count"][1]/text()') # broken
-        l.add_xpath('recipe_yield_units', '//*[@id="servings-button"]/span[1]/span[2]/text()')
+        l.add_xpath('recipe_yield', '//div[@class="subtext"][1]/text()') # broken
         l.add_xpath('cals_per_serving', '//*[@id="nutrition-button"]/span[1]/span[1]/text()')
         l.add_xpath('cook_time', '//span[@class="ready-in-time"][1]/text()')
+        l.add_xpath('image', '/html/body/div[1]/div[2]/div/div[3]/section/div[1]/div/section[1]/span/a[1]/img/@src')
 
         # housekeeping fields
         l.add_value('url', response.url)
