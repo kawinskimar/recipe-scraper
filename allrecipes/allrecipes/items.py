@@ -18,6 +18,7 @@ class AllrecipesItem(Item):
     recipe_yield_value = Field() # not working
     recipe_yield_units = Field()
     cals_per_serving = Field() # not working
+    cook_time = Field()
 
     # housekeeping fields
     url = Field()

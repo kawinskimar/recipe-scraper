@@ -9,8 +9,8 @@ from scrapy.loader import ItemLoader as IL
 
 class AllrecipesSpider(scrapy.Spider):
     name = 'allrecipes'
-    #allowed_domains = ['allrecipes.com']
-    download_delay = 5
+    allowed_domains = ['allrecipes.com']
+    download_delay = 3
 
     start_urls = [
             # American recipe categories
@@ -61,8 +61,10 @@ class AllrecipesSpider(scrapy.Spider):
         l.add_xpath('title', '//h1[@itemprop="name"][1]/text()')
         l.add_xpath('ingredients', '//span[@itemprop="ingredients"]/text()')
         l.add_xpath('directions', '//span[@class="recipe-directions__list--item"]/text()')
-        l.add_xpath('recipe_yield_value', '//span[@class="servings-count"][1]/text()')
-        l.add_xpath('recipe_yield_units', '//span[@class="servings-count__desc"][1]/text()')
+        l.add_xpath('recipe_yield_value', '//span[@class="servings-count"][1]/text()') # broken
+        l.add_xpath('recipe_yield_units', '//*[@id="servings-button"]/span[1]/span[2]/text()')
+        l.add_xpath('cals_per_serving', '//*[@id="nutrition-button"]/span[1]/span[1]/text()')
+        l.add_xpath('cook_time', '//span[@class="ready-in-time"][1]/text()')
 
         # housekeeping fields
         l.add_value('url', response.url)
