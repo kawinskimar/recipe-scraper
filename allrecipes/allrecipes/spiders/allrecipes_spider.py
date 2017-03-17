@@ -32,22 +32,13 @@ class AllrecipesSpider(scrapy.Spider):
         #links = response.xpath('//*/@href').re(r'^\/recipe\/.*$')
         links = uniquify(links) # returns only unique values in list
 
+        num_recipes = 2
+
         for i in range (0, len(links)):
             links[i] = urlparse.urljoin(response.url, links[i])
 
-        if len(links) >= 5:
-            num_recipes = 5
-        else:
-            num_recipes = len(links)
-
-        rand_recipes = random.sample(links, 2)
-
-        # yield {
-        #     'relative_links': rand_recipes,
-        #     'length': len(links)
-        # }
-
-        ## TODO: follow each random link and parse info from them for emailing
+        rand_recipes = random.sample(links, num_recipes)
+        
         for recipe in rand_recipes:
             yield Request(recipe, callback=self.parse_following_urls)
     #     ## TODO: create separate file-parsing + email script
