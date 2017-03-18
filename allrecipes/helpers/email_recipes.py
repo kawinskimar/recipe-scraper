@@ -1,3 +1,5 @@
+#! python
+
 import smtplib
 
 from email.mime.multipart import MIMEMultipart
@@ -5,12 +7,12 @@ from email.mime.text import MIMEText
 
 # me == my email address
 # you == recipient's email address
-me = "mkjo0617@gmail.com"
+me = "recipe.send.scraper@gmail.com"
 you = "marissakawinski@gmail.com"
 
 # Create message container - the correct MIME type is multipart/alternative.
 msg = MIMEMultipart('alternative')
-msg['Subject'] = "Recipe Test 4" # eventually will be "Recipes for the Week of <Sunday of starting week>"
+msg['Subject'] = "This Week's Recipes" # eventually will be "Recipes for the Week of <Sunday of starting week>"
 msg['From'] = me
 msg['To'] = you
 
@@ -76,6 +78,6 @@ s.ehlo()
 s.starttls()
 # sendmail function takes 3 arguments: sender's address, recipient's address
 # and message to send - here it is sent as one string.
-s.login('mkjo0617@gmail.com', 'Mufasa1993')
+s.login('recipe.send.scraper@gmail.com', 'Scraper123')
 s.sendmail(me, you, msg.as_string())
 s.quit()
