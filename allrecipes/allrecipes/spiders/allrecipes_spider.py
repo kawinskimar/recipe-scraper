@@ -1,3 +1,5 @@
+#! python
+
 import scrapy
 import random
 import urlparse
@@ -13,9 +15,12 @@ class AllrecipesSpider(scrapy.Spider):
     download_delay = 3
 
     start_urls = [
+            'http://allrecipes.com/recipes/144/breakfast-and-brunch/breakfast-casseroles/', # breakfast casseroles
             'http://allrecipes.com/recipes/659/meat-and-poultry/chicken/chicken-breasts/', # chicken breasts
             'http://allrecipes.com/recipes/693/meat-and-poultry/turkey/ground/', # ground turkey
-            'http://allrecipes.com/recipes/148/breakfast-and-brunch/eggs' # breakfasts with eggs
+            'http://allrecipes.com/recipes/17504/world-cuisine/latin-american/mexican/main-dishes/', # Mexican main dishes
+            'http://allrecipes.com/recipes/16767/world-cuisine/european/italian/main-dishes/', # Italian main dishes
+            'http://allrecipes.com/recipes/17135/world-cuisine/asian/chinese/main-dishes/' # Chinese main dishes
     ]
 
     def parse(self, response):
@@ -32,7 +37,7 @@ class AllrecipesSpider(scrapy.Spider):
         #links = response.xpath('//*/@href').re(r'^\/recipe\/.*$')
         links = uniquify(links) # returns only unique values in list
 
-        num_recipes = 2
+        num_recipes = 3
 
         for i in range (0, len(links)):
             links[i] = urlparse.urljoin(response.url, links[i])
