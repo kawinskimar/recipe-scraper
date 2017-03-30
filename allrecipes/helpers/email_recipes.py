@@ -1,6 +1,6 @@
 #! python
 
-import smtplib, os, glob
+import smtplib, os, glob, datetime
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -13,7 +13,7 @@ html = ''
 
 # Create message container - the correct MIME type is multipart/alternative.
 msg = MIMEMultipart('alternative')
-msg['Subject'] = "This Week's Recipes" # eventually will be "Recipes for the Week of <Sunday of starting week>"
+msg['Subject'] = "Recipes for the Week of " + str(datetime.date.today())  # eventually will be "Recipes for the Week of <Sunday of starting week>"
 msg['From'] = me
 msg['To'] = you
 
