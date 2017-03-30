@@ -46,8 +46,8 @@ def write_html_files(json_dict, file_path):
         f.close()
 
 if __name__ == "__main__":
-    file_path = "..\\recipe files\\"
-    json_file = open(r'..\recipes.json').read()
+    file_path = "../recipe_files/"
+    json_file = open(r'../recipes.json').read()
     json_data = json.loads(json_file)
     write_html_files(json_data, file_path)
 
