@@ -7,6 +7,7 @@ from email.mime.text import MIMEText
 
 # me == my email address
 # you == recipient's email address
+# adding comment to test merging
 me = "recipe.send.scraper@gmail.com"
 you = "marissakawinski@gmail.com"
 html = ''
