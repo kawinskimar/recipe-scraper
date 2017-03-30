@@ -23,7 +23,7 @@ msg['To'] = you
 os.chdir('../recipe_files')
 for file in glob.glob('*.html'):
     msg['Subject'] = os.path.splitext(file)[0]
-    rec_file = open(file, 'rw+')os.chdir('../recipe_files')
+    rec_file = open(file, 'rw+')
     html = rec_file.read()
     rec_file.close()
 
