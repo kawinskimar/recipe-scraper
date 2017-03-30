@@ -37,7 +37,7 @@ class AllrecipesSpider(scrapy.Spider):
         #links = response.xpath('//*/@href').re(r'^\/recipe\/.*$')
         links = uniquify(links) # returns only unique values in list
 
-        num_recipes = 3
+        num_recipes = 2
 
         for i in range (0, len(links)):
             links[i] = urlparse.urljoin(response.url, links[i])
